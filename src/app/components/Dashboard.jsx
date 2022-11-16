@@ -8,6 +8,7 @@ const Dashboard = ({ groups }) => (
     {
       groups.map((group) => (
         <TaskList
+          key={group.id}
           id={group.id}
           name={group.name}
         />
